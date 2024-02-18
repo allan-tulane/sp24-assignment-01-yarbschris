@@ -12,8 +12,7 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 1. (2 pts ea) **Asymptotic notation** (12 pts)
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
-.  
-.  
+.  Yes, $2^{n+1} = 2 * 2^{n}$, so there exists a c > 2 for which $2^{n+1} < c * 2^{n}$.
 .  
 .  
 . 
