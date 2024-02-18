@@ -102,7 +102,9 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
 
   - 3b. (4 pts) What is the Work and Span of this implementation?  
 
-.  
+.  Work and Span are both linear:
+Work: O(n)
+Span: O(n)
 .  
 .  
 .  
