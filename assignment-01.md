@@ -13,7 +13,7 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
 .  
-Yes, $2^{n+1} = 2 * 2^{n}$, so there is some c > 2 for which $c * 2^{n+1} > 2 * 2^{n}$. Therefore $2^{n+1} \in O(2^n)$
+Yes, $2^{n+1} = 2 * 2^{n}$, so there is some c > 2 for which $c * 2^{n} > 2^{n + 1}$. Therefore $2^{n+1} \in O(2^n)$
 .  
 .  
 . 
@@ -27,7 +27,7 @@ Polynomail growth is faster than logarithmic growth.
   - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
 .  
 
-.  No, $n^{1.01}$ grows significantly faster than $\mathrm{log}^2$ as n increases, and there is no constant c for which $n^{1.01}$ < $c * \mathrm{log}^2$
+.  No, $n^{1.01}$ grows significantly faster than $\mathrm{log}^2$ as n increases, and there is no constant c for which $n^{1.01}$ < $c * \mathrm{log}^2$ as n approaches infinity
 .  
 .  
 
@@ -38,12 +38,12 @@ Polynomail growth is faster than logarithmic growth.
 .  
   - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
 .  
-.  
+.  No, $\sqrt{n}$ grows faster than $\mathrm{log} n^3$, and there is no constant c for which $\sqrt{n}$ < c * $\mathrm{log} n^3$ as n approaches infinity. 
 .  
 .  
   - 1f. Is $\sqrt{n} \in \Omega((\mathrm{log} n)^3)$?  
 .  
-
+Yes, because $\sqrt{n}$ grows faster than $\mathrm{log}^2 n$, and for something to be $\in \Omega(\mathrm{log}^2 n)$, it must grow as fast or faster than $\mathrm{log}^2 n$.
 
 2. **SPARC to Python** (12 pts)
 
