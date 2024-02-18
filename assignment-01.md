@@ -27,7 +27,7 @@ Polynomail growth is faster than logarithmic growth.
   - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
 .  
 
-.  No, $n^{1.01}$ grows significantly faster than $\mathrm{log}^2$ as n increases, and there is no constant c for which $n^{1.01}$ < $c * \mathrm{log}^2$ as n approaches infinity
+.  No, polynomial growth is faster than logarithmic growth, so $n^{1.01}$ grows significantly faster than $\mathrm{log}^2$ as n increases, and there is no constant c for which $n^{1.01}$ < $c * \mathrm{log}^2$ as n approaches infinity
 .  
 .  
 
@@ -38,7 +38,7 @@ Polynomail growth is faster than logarithmic growth.
 .  
   - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
 .  
-.  No, $\sqrt{n}$ grows faster than $\mathrm{log} n^3$, and there is no constant c for which $\sqrt{n}$ < c * $\mathrm{log} n^3$ as n approaches infinity. 
+.  No, again, polynomial growth is faster than logarithmic growth, so $\sqrt{n}$ grows faster than $\mathrm{log} n^3$, and there is no constant c for which $\sqrt{n}$ < c * $\mathrm{log} n^3$ as n approaches infinity. 
 .  
 .  
   - 1f. Is $\sqrt{n} \in \Omega((\mathrm{log} n)^3)$?  
