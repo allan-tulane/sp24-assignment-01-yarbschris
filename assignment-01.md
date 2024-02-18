@@ -21,13 +21,13 @@ Yes, $2^{n+1} = 2 * 2^{n}$, so there is some c > 2 for which $c * 2^{n} > 2^{n +
 .  
 .  
 .  No, because $2^{2^n}$ grows significantly faster than $(2^n)$ as n increases, and there is no constant c for which $2^{2^n} < c * (2^n)$.
-Polynomail growth is faster than logarithmic growth.
+Polynomial growth is faster than logarithmic growth.
 .  
 .  
   - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
 .  
 
-.  No, polynomial growth is faster than logarithmic growth, so $n^{1.01}$ grows significantly faster than $\mathrm{log}^2$ as n increases, and there is no constant c for which $n^{1.01}$ < $c * \mathrm{log}^2$ as n approaches infinity
+.  No, polynomial growth is faster than logarithmic growth, so $n^{1.01}$ grows significantly faster than $\mathrm{log}^2 n$ as n increases, and there is no constant c for which $n^{1.01}$ < $c * \mathrm{log}^2 n$ as n approaches infinity
 .  
 .  
 
