@@ -72,7 +72,9 @@ def foo(x):
 
   - 2b. (6 pts) What does this function do, in your own words?  
 
-.  This function recursively calculates the xth term of the Fibonacci Sequence. The base cases are one and zero. If the input is greater than 1, then foo is run on every fibonacci term less than x until the function tries to do foo(1) or foo(0), at which point the function returns the base case and adds up all of the terms that had been found recursively to return the xth term of the fibonacci sequence.
+.  This function recursively calculates the xth term of the Fibonacci Sequence. The base cases are one and zero. 
+If the input is greater than 1, then foo is run on every fibonacci term less than x until the function tries to do foo(1) or foo(0), at 
+which point the function returns the base case and adds up all of the terms that had been found recursively to return the xth term of the fibonacci sequence.
 .  
 .  
 .  
