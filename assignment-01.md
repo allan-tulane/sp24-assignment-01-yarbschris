@@ -128,7 +128,7 @@ is equal to the list's length at that level, so when this is all added it, the w
 .  
 .  
 .  The span of this algorithm is equal to the longest critical path in the recursion tree, since the the each node branches in half at 
-each recursion, the depth of the tree is $\mathrm{log}^2 n$, however, since the function is not parallelized, it waits until both sides have been completed to combine the results and continue, so the span remains proportional to the length of the list, making the span O(n).
+each recursion, the depth of the tree is log base 2 of n, however, since the function is not parallelized, it waits until both sides have been completed to combine the results and continue, so the span remains proportional to the length of the list, making the span O(n).
 .  
 .  
 .  
@@ -141,7 +141,7 @@ each recursion, the depth of the tree is $\mathrm{log}^2 n$, however, since the 
 .  
 .  The total work of this algorithm remains O(n), because no matter how many threads are running the algorithm, the same number of elements must be analyzed.
 
-However, the span does benefit, with each recursive call spawning a new thread, the span becomes the longest critical path in the recursion tree as discusse earlier, so the new span is $\mathrm{log} n$
+However, the span does benefit, with each recursive call spawning a new thread, the span becomes the longest critical path in the recursion tree as discussed earlier, so the new span is O(log n)
 .  
 .  
 .  
