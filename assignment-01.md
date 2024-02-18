@@ -12,25 +12,28 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 1. (2 pts ea) **Asymptotic notation** (12 pts)
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
-.  Yes, $2^{n+1} = 2 * 2^{n}$, so there exists a c > 2 for which $2^{n+1} < c * 2^{n}$.
+.  
+Yes, $2^{n+1} = 2 * 2^{n}$, so there is some c > 2 for which $c * 2^{n+1} > 2 * 2^{n}$. Therefore $2^{n+1} \in O(2^n)$
 .  
 .  
 . 
   - 1b. Is $2^{2^n} \in O(2^n)$? Why or why not?     
 .  
 .  
-.  
+.  No, because $2^{2^n}$ grows significantly faster than $(2^n)$ as n increases, and there is no constant c for which $2^{2^n} < c * (2^n)$.
+Polynomail growth is faster than logarithmic growth.
 .  
 .  
   - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
 .  
-.  
+
+.  No, $n^{1.01}$ grows significantly faster than $\mathrm{log}^2$ as n increases, and there is no constant c for which $n^{1.01}$ < $c * \mathrm{log}^2$
 .  
 .  
 
   - 1d. Is $n^{1.01} \in \Omega(\mathrm{log}^2 n)$?  
 .  
-.  
+.  Yes, because $n^{1.01}$ grows faster than $\mathrm{log}^2 n$, and for something to be $\in \Omega(\mathrm{log}^2 n)$, it must grow as fast or faster than $\mathrm{log}^2 n$.
 .  
 .  
   - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
