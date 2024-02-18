@@ -64,7 +64,9 @@ def foo(x):
     if x <= 1:
         return x
     else:
-        return (foo(x-1) + foo(x-2))
+        ra = foo(x-1)
+        rb = foo(x-2)
+        return ra + rb
 
   - 2b. (6 pts) What does this function do, in your own words?  
 

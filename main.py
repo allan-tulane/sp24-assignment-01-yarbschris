@@ -8,7 +8,9 @@ def foo(x):
     if x <= 1:
         return x
     else:
-        return (foo(x-1) + foo(x-2))
+        ra = foo(x-1)
+        rb = foo(x-2)
+        return ra + rb
 
 
 def longest_run(mylist, key):
